@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>The Onion! Or not?</title>
+    <meta name="description" content="Simple Quiz Game">
+    <meta name="author" content="people">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="assets/stylesheets/base.css">
+    <link rel="stylesheet" href="assets/stylesheets/skeleton.css">
+    <link rel="stylesheet" href="assets/stylesheets/layout.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <script src="assets/script.js"></script>
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    ================================================== -->
+
+    <div class="container">
+        <div class="offset-by-two twelve columns">
+            <h1 class="remove-bottom" style="margin-top: 40px">The Onion! Or not?</h1>
+            <h5>Version 0.1</h5>
+            <hr />
+        </div>
+        <div class="offset-by-two twelve columns">
+            <h3>Instructions</h3>
+            <p>A headline of a news story will appear, click on whether you think the article was written by <a href="http://en.wikipedia.org/wiki/The_onion">The Onion</a>, or not.</p>
+        </div>
+        <div class="offset-by-two twelve columns">
+            <h3 id="headline">School Shut Down and Kids Hospitalized After 6th Grade Boys Spray Too Much Axe</h3>
+            <button onclick="buttonClick(true)" class="onion" type="button"><img src="images/onion.png" alt="onion"></button>
+            <button onClick="buttonClick(false)" class="not" type="button">NOT</button>
+
+        </div>
+        <div class="offset-by-two twelve columns">
+            <h3 id="answer"></h3>
+            <button onClick="nextArticle()" id="next" type="button">NEXT</button>
+        </div>
+        <div class="offset-by-two twelve columns">
+            For every ad you block a major news network reports an Onion article as true.<br>Copyright &copy;2014 Josiah Witt.
+        </div>
+    </div>
+    
+</body>
+</html>
